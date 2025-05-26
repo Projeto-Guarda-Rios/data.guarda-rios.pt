@@ -36,7 +36,7 @@ function GraficoDouro() {
             <iframe
                 className="graph-iframe"
                 title="All - Graph"
-                src={`https://data.guarda-rios.pt:4563/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=3&__feature.dashboardSceneSolo`}
+                src={`https://data.guarda-rios.pt/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=3&__feature.dashboardSceneSolo`}
                 width="560"
                 height="315"
                 allowFullScreen
@@ -46,7 +46,7 @@ function GraficoDouro() {
             <iframe
                 className="graph-iframe"
                 title="All - Graph"
-                src={`https://data.guarda-rios.pt:4563/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=15&__feature.dashboardSceneSolo`}
+                src={`https://data.guarda-rios.pt/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=15&__feature.dashboardSceneSolo`}
                 width="560"
                 height="315"
                 allowFullScreen
@@ -56,7 +56,7 @@ function GraficoDouro() {
             <iframe
                 className="graph-iframe"
                 title="All - Graph"
-                src={`https://data.guarda-rios.pt:4563/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=16&__feature.dashboardSceneSolo`}
+                src={`https://data.guarda-rios.pt/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=16&__feature.dashboardSceneSolo`}
                 width="560"
                 height="315"
                 allowFullScreen
@@ -66,7 +66,7 @@ function GraficoDouro() {
             <iframe
                 className="graph-iframe"
                 title="All - Graph"
-                src={`https://data.guarda-rios.pt:4563/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=13&__feature.dashboardSceneSolo`}
+                src={`https://data.guarda-rios.pt/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=13&__feature.dashboardSceneSolo`}
                 width="560"
                 height="315"
                 allowFullScreen
@@ -76,7 +76,7 @@ function GraficoDouro() {
             <iframe
                 className="graph-iframe"
                 title="All - Graph"
-                src={`https://data.guarda-rios.pt:4563/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=14&__feature.dashboardSceneSolo`}
+                src={`https://data.guarda-rios.pt/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=14&__feature.dashboardSceneSolo`}
                 width="560"
                 height="315"
                 allowFullScreen
@@ -86,7 +86,7 @@ function GraficoDouro() {
             <iframe
                 className="graph-iframe"
                 title="All - Graph"
-                src={`https://data.guarda-rios.pt:4563/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=22&__feature.dashboardSceneSolo`}
+                src={`https://data.guarda-rios.pt/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=22&__feature.dashboardSceneSolo`}
                 width="560"
                 height="315"
                 allowFullScreen

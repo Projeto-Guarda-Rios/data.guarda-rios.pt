@@ -1,9 +1,8 @@
 import PropTypes from "prop-types";
 import HomePage from "./Pages/homePage.jsx";
 import GraficoGeral from "./Pages/graficoGeral.jsx";
+import GraficoRibalab from "./Pages/graficoRibalab.jsx";
 import GraficoGranja from "./Pages/graficoGranja.jsx";
-import GraficoDouro from "./Pages/graficoDouro.jsx";
-import GraficoTejo from "./Pages/graficoTejo.jsx";
 
 function Window(props) {
     if (props.currentPage === 0) {
@@ -16,15 +15,11 @@ function Window(props) {
         );
     } else if (props.currentPage === 2) {
         return (
-            <GraficoGranja />
+            <GraficoRibalab />
         );
     } else if (props.currentPage === 3) {
         return (
-            <GraficoDouro />
-        );
-    } else if (props.currentPage === 4) {
-        return (
-            <GraficoTejo />
+            <GraficoGranja />
         );
     }
 }

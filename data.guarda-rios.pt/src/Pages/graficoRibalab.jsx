@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
 
-function GraficoTejo() {
+function GraficoRibalab() {
     // Estado para armazenar os timestamps
     const [newFrom, setNewFrom] = useState(0);
     const [newTo, setNewTo] = useState(0);
@@ -32,56 +32,56 @@ function GraficoTejo() {
 
     return (
         <div className="window">
-            <h2 className="graph-title">Gráfico Rio Tejo</h2>
+            <h2 className="graph-title">Gráfico Ribalab</h2>
             <iframe
                 className="graph-iframe"
                 title="All - Graph"
-                src={`https://data.guarda-rios.pt/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=4&__feature.dashboardSceneSolo?`}
+                src={`https://data.guarda-rios.pt/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=25&__feature.dashboardSceneSolo`}
                 width="560"
                 height="315"
                 allowFullScreen
             ></iframe>
-            <h2 className="graph-title">Gráfico Rio Tejo de Temperatura</h2>
+            <h2 className="graph-title">Gráfico Ribalab de Temperatura</h2>
             <iframe
                 className="graph-iframe"
                 title="All - Graph"
-                src={`https://data.guarda-rios.pt/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=19&__feature.dashboardSceneSolo`}
+                src={`https://data.guarda-rios.pt/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=26&__feature.dashboardSceneSolo`}
                 width="560"
                 height="315"
                 allowFullScreen
             ></iframe>
-            <h2 className="graph-title">Gráfico Rio Tejo de Turbidez</h2>
+            <h2 className="graph-title">Gráfico Ribalab de Turbidez</h2>
             <iframe
                 className="graph-iframe"
                 title="All - Graph"
-                src={`https://data.guarda-rios.pt/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=20&__feature.dashboardSceneSolo`}
+                src={`https://data.guarda-rios.pt/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=28&__feature.dashboardSceneSolo`}
                 width="560"
                 height="315"
                 allowFullScreen
             ></iframe>
-            <h2 className="graph-title">Gráfico Rio Tejo de pH</h2>
+            <h2 className="graph-title">Gráfico Ribalab de pH</h2>
             <iframe
                 className="graph-iframe"
                 title="All - Graph"
-                src={`https://data.guarda-rios.pt/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=17&__feature.dashboardSceneSolo`}
+                src={`https://data.guarda-rios.pt/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=27&__feature.dashboardSceneSolo`}
                 width="560"
                 height="315"
                 allowFullScreen
             ></iframe>
-            <h2 className="graph-title">Gráfico Rio Tejo de TDS</h2>
+            <h2 className="graph-title">Gráfico Ribalab de TDS</h2>
             <iframe
                 className="graph-iframe"
                 title="All - Graph"
-                src={`https://data.guarda-rios.pt/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=18&__feature.dashboardSceneSolo`}
+                src={`https://data.guarda-rios.pt/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=29&__feature.dashboardSceneSolo`}
                 width="560"
                 height="315"
                 allowFullScreen
             ></iframe>
-            <h2 className="graph-title">Indicador de Qualidade do Rio Tejo</h2>
+            <h2 className="graph-title">Indicador de Qualidade do Ribalab</h2>
             <iframe
                 className="graph-iframe"
                 title="All - Graph"
-                src={`https://data.guarda-rios.pt/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=23&__feature.dashboardSceneSolo`}
+                src={`https://data.guarda-rios.pt/grafic-embed/d-solo/ae9l1138nc5xce/pgr-all-data?orgId=2&from=${newFrom}&to=${newTo}&timezone=browser&refresh=auto&panelId=30&__feature.dashboardSceneSolo`}
                 width="560"
                 height="315"
                 allowFullScreen
@@ -90,4 +90,4 @@ function GraficoTejo() {
     );
 }
 
-export default GraficoTejo;
+export default GraficoRibalab;

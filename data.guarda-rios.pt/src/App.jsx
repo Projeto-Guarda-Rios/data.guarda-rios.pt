@@ -11,6 +11,7 @@ const App = () => {
     document.title = "Data - Projeto Guarda Rios";
   }, []);
 
+
   const [currentPage, setCurrentPage] = useState(0);
 
   const updateCurrentPage = (newValue) => {
