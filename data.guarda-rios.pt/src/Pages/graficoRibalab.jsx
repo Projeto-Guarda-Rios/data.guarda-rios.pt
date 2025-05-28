@@ -33,6 +33,24 @@ function GraficoRibalab() {
     return (
         <div className="window">
             <h2 className="graph-title">Gráfico Ribalab</h2>
+
+            {/* Botão de Refresh */}
+            <div style={{ marginBottom: '20px' }}>
+                <button
+                    onClick={updateGraphUrl}
+                    style={{
+                        padding: '10px 20px',
+                        backgroundColor: '#4CAF50',
+                        color: 'white',
+                        border: 'none',
+                        borderRadius: '5px',
+                        cursor: 'pointer'
+                    }}
+                >
+                    🔄 Atualizar Gráficos
+                </button>
+            </div>
+
             <iframe
                 className="graph-iframe"
                 title="All - Graph"
