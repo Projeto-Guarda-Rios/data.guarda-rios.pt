@@ -4,6 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
+  Home,
   FlaskConical,
   ChevronRight,
   Menu,
@@ -13,6 +14,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
+  { label: "home", href: "/", icon: Home },
   { label: "I-Fest²", href: "/dashboard/ifest", icon: FlaskConical },
 ];
 
