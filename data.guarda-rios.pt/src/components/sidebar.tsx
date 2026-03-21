@@ -20,6 +20,7 @@ const navItems = [
   { label: "geral", href: "/dashboard/geral", icon: BarChart3 },
   { label: "mostra_2025", href: "/dashboard/mostra-2025", icon: FlaskConical },
   { label: "rib_granja", href: "/dashboard/granja", icon: Waves },
+  { label: "I-Fest²", href: "/dashboard/ifest", icon: FlaskConical },
 ];
 
 function NavContent({ onNavigate }: { onNavigate?: () => void }) {
