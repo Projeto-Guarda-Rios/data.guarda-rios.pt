@@ -5,7 +5,7 @@ import { Header } from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Guarda Rios // Data",
+  title: "Guarda Rios - Data",
   description:
     "Portal de partilha de dados de qualidade da água — Projeto Guarda Rios",
   icons: {
