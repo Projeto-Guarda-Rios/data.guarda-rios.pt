@@ -14,6 +14,7 @@ export default function IFestPage() {
       description="Dados da estação I-Fest² — atualização a cada 5min"
       charts={charts}
       refreshInterval={300000}
+      showRefreshButton
     />
   );
 }

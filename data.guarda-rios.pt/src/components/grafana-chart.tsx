@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import { useTheme } from "next-themes";
 
 interface GrafanaChartProps {
   panelId: number;
@@ -25,6 +26,12 @@ export function GrafanaChart({
   refreshInterval = 300000,
 }: GrafanaChartProps) {
   const [timestamps, setTimestamps] = useState(generateTimestamps);
+  const [mounted, setMounted] = useState(false);
+  const { resolvedTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const refresh = useCallback(() => {
     setTimestamps(generateTimestamps());
@@ -35,7 +42,8 @@ export function GrafanaChart({
     return () => clearInterval(interval);
   }, [refresh, refreshInterval]);
 
-  const src = `${DASHBOARD_BASE}?orgId=2&from=${timestamps.from}&to=${timestamps.to}&timezone=browser&refresh=auto&panelId=${panelId}&__feature.dashboardSceneSolo`;
+  const grafanaTheme = resolvedTheme === "light" ? "light" : "dark";
+  const src = `${DASHBOARD_BASE}?orgId=2&from=${timestamps.from}&to=${timestamps.to}&timezone=browser&refresh=auto&panelId=${panelId}&__feature.dashboardSceneSolo&theme=${grafanaTheme}`;
 
   return (
     <div className="group">
@@ -48,12 +56,14 @@ export function GrafanaChart({
         </span>
       </div>
       <div className="overflow-hidden rounded-md border border-border bg-card">
-        <iframe
-          src={src}
-          className="h-[350px] w-full"
-          frameBorder="0"
-          title={title}
-        />
+        {mounted && (
+          <iframe
+            src={src}
+            className="h-[350px] w-full"
+            frameBorder="0"
+            title={title}
+          />
+        )}
       </div>
     </div>
   );
