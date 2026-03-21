@@ -32,7 +32,7 @@ function GraficoRibalab() {
 
     return (
         <div className="window">
-            <h2 className="graph-title">Gráfico Ribalab</h2>
+            <h2 className="graph-title">Gráfico Mostra 2025</h2>
 
             {/* Botão de Refresh */}
             <div style={{ marginBottom: '20px' }}>
@@ -59,7 +59,7 @@ function GraficoRibalab() {
                 height="315"
                 allowFullScreen
             ></iframe>
-            <h2 className="graph-title">Gráfico Ribalab de Temperatura</h2>
+            <h2 className="graph-title">Gráfico Mostra 2025 de Temperatura</h2>
             <iframe
                 className="graph-iframe"
                 title="All - Graph"
@@ -68,7 +68,7 @@ function GraficoRibalab() {
                 height="315"
                 allowFullScreen
             ></iframe>
-            <h2 className="graph-title">Gráfico Ribalab de Turbidez</h2>
+            <h2 className="graph-title">Gráfico Mostra 2025 de Turbidez</h2>
             <iframe
                 className="graph-iframe"
                 title="All - Graph"
@@ -77,7 +77,7 @@ function GraficoRibalab() {
                 height="315"
                 allowFullScreen
             ></iframe>
-            <h2 className="graph-title">Gráfico Ribalab de pH</h2>
+	    {/*<h2 className="graph-title">Gráfico Mostra 2025 de pH</h2>
             <iframe
                 className="graph-iframe"
                 title="All - Graph"
@@ -86,7 +86,7 @@ function GraficoRibalab() {
                 height="315"
                 allowFullScreen
             ></iframe>
-            <h2 className="graph-title">Gráfico Ribalab de TDS</h2>
+            <h2 className="graph-title">Gráfico Mostra 2025 de TDS</h2>
             <iframe
                 className="graph-iframe"
                 title="All - Graph"
@@ -95,7 +95,7 @@ function GraficoRibalab() {
                 height="315"
                 allowFullScreen
             ></iframe>
-            <h2 className="graph-title">Indicador de Qualidade do Ribalab</h2>
+            <h2 className="graph-title">Indicador de Qualidade da Mostra 2025</h2>
             <iframe
                 className="graph-iframe"
                 title="All - Graph"
@@ -103,7 +103,7 @@ function GraficoRibalab() {
                 width="560"
                 height="315"
                 allowFullScreen
-            ></iframe>
+            ></iframe>*/}
         </div>
     );
 }
