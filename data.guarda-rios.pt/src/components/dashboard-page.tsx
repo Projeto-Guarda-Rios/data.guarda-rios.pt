@@ -3,6 +3,7 @@
 import { RefreshCw } from "lucide-react";
 import { GrafanaChart } from "./grafana-chart";
 import { useState, useCallback } from "react";
+import { useTranslations } from "next-intl";
 
 interface ChartConfig {
   panelId: number;
@@ -25,6 +26,7 @@ export function DashboardPage({
   showRefreshButton = false,
 }: DashboardPageProps) {
   const [key, setKey] = useState(0);
+  const t = useTranslations("dashboard");
 
   const handleRefresh = useCallback(() => {
     setKey((k) => k + 1);
@@ -44,7 +46,7 @@ export function DashboardPage({
             className="flex items-center gap-2 rounded-md border border-border bg-card px-3 py-1.5 text-xs text-muted-foreground transition-colors hover:border-primary hover:text-primary"
           >
             <RefreshCw className="h-3 w-3" />
-            refresh
+            {t("refresh")}
           </button>
         )}
       </div>

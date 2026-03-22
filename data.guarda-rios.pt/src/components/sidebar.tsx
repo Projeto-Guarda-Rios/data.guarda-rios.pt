@@ -1,8 +1,9 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname } from "@/navigation";
+import { Link } from "@/navigation";
+import { useTranslations } from "next-intl";
 import {
   Home,
   FlaskConical,
@@ -14,12 +15,13 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
-  { label: "home", href: "/", icon: Home },
-  { label: "I-Fest²", href: "/dashboard/ifest", icon: FlaskConical },
+  { labelKey: "home" as const, href: "/" as const, icon: Home },
+  { labelKey: null, label: "I-Fest²", href: "/dashboard/ifest" as const, icon: FlaskConical },
 ];
 
 function NavContent({ onNavigate }: { onNavigate?: () => void }) {
   const pathname = usePathname();
+  const t = useTranslations("nav");
 
   return (
     <>
@@ -37,7 +39,7 @@ function NavContent({ onNavigate }: { onNavigate?: () => void }) {
       <nav className="flex-1 px-2 py-4">
         <div className="mb-2 px-3">
           <span className="text-[10px] font-medium uppercase tracking-widest text-muted-foreground">
-            navigation
+            {t("navigation")}
           </span>
         </div>
         <ul className="space-y-1">
@@ -45,6 +47,7 @@ function NavContent({ onNavigate }: { onNavigate?: () => void }) {
             const isActive =
               pathname === item.href ||
               (item.href !== "/" && pathname.startsWith(item.href));
+            const label = item.labelKey ? t(item.labelKey) : item.label!;
             return (
               <li key={item.href}>
                 <Link
@@ -58,7 +61,7 @@ function NavContent({ onNavigate }: { onNavigate?: () => void }) {
                   )}
                 >
                   <item.icon className="h-4 w-4" />
-                  <span className="font-medium">{item.label}</span>
+                  <span className="font-medium">{label}</span>
                   {isActive && (
                     <ChevronRight className="ml-auto h-3 w-3 text-primary" />
                   )}
@@ -73,7 +76,7 @@ function NavContent({ onNavigate }: { onNavigate?: () => void }) {
         <div className="flex items-center gap-2">
           <div className="h-2 w-2 rounded-full bg-primary animate-pulse" />
           <span className="text-[10px] text-muted-foreground">
-            sensors online
+            {t("sensorsOnline")}
           </span>
         </div>
       </div>
@@ -91,13 +94,14 @@ export function Sidebar() {
 
 export function MobileSidebar() {
   const [open, setOpen] = React.useState(false);
+  const t = useTranslations("nav");
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
         <Button variant="ghost" size="icon" className="md:hidden">
           <Menu className="h-5 w-5" />
-          <span className="sr-only">Open menu</span>
+          <span className="sr-only">{t("openMenu")}</span>
         </Button>
       </SheetTrigger>
       <SheetContent>
