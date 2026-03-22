@@ -2,6 +2,8 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+**See also:** `../CLAUDE.md` for project-level context about Guarda Rios and the Websites directory as a whole.
+
 ## About This Site
 
 `data.guarda-rios.pt` is the public data portal for the Guarda Rios project. All monitoring stations send their readings to an API running on the project server; this site visualises those readings via embedded Grafana panels. Every measurement from every station and every river is freely accessible here — no login required.
