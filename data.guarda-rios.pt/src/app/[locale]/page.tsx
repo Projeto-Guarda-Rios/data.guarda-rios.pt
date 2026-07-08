@@ -51,7 +51,7 @@ export default function HomePage() {
               {t("stationsLabel")}
             </span>
           </div>
-          <p className="mt-2 text-2xl font-semibold text-foreground">1</p>
+          <p className="mt-2 text-2xl font-semibold text-foreground">2</p>
           <p className="text-[10px] text-muted-foreground">
             {t("stationsDesc")}
           </p>

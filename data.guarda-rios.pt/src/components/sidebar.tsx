@@ -16,7 +16,8 @@ import { Button } from "@/components/ui/button";
 
 const navItems = [
   { labelKey: "home" as const, href: "/" as const, icon: Home },
-  { labelKey: null, label: "I-Fest²", href: "/dashboard/ifest" as const, icon: FlaskConical },
+  { labelKey: null, label: "Faqtos", href: "/dashboard/faqtos" as const, icon: FlaskConical },
+  { labelKey: null, label: "Ribalab", href: "/dashboard/ribalab" as const, icon: FlaskConical },
 ];
 
 function NavContent({ onNavigate }: { onNavigate?: () => void }) {

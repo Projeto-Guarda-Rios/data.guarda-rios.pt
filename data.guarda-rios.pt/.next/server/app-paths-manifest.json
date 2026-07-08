@@ -1,0 +1,4 @@
+{
+  "/[locale]/dashboard/ribalab/page": "app/[locale]/dashboard/ribalab/page.js",
+  "/[locale]/dashboard/faqtos/page": "app/[locale]/dashboard/faqtos/page.js"
+}

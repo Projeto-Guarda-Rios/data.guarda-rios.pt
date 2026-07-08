@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_messages_en_json";
+exports.ids = ["_rsc_messages_en_json"];
+exports.modules = {
+
+/***/ "(rsc)/./messages/en.json":
+/*!**************************!*\
+  !*** ./messages/en.json ***!
+  \**************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"metadata":{"title":"Guarda Rios - Data","description":"Water quality data sharing portal — Guarda Rios Project"},"nav":{"home":"home","navigation":"navigation","sensorsOnline":"sensors online","openMenu":"Open menu"},"header":{"toggleTheme":"Toggle theme"},"home":{"terminalCommand":"$ cat welcome.md","title":"Data Portal","titleHighlight":"Guarda Rios","welcome":"Welcome to the Guarda Rios Project data sharing portal. We monitor the water quality of Portuguese rivers in real time, making data accessible to everyone.","parametersLabel":"Parameters","parametersDesc":"Temperature, Turbidity","stationsLabel":"Stations","stationsDesc":"Faqtos, Ribalab","statusLabel":"Status","statusValue":"Online","statusDesc":"Automatic update every 5 min","aboutFile":"about.sh","about1":"The Guarda Rios Project focuses on monitoring the water quality of Portuguese rivers.","about2":"Through distributed monitoring stations, we collect real-time data on temperature and turbidity.","about3":"All data and hardware are open source, licensed under <mit>MIT</mit> and <cern>CERN-OHL-P v2</cern>."},"dashboard":{"refresh":"refresh","geral":{"title":"General Chart","description":"Overview of all sensors — update every 30s"},"granja":{"title":"Ribeira da Granja","description":"Ribeira da Granja station data — update every 5min"},"faqtos":{"title":"Faqtos","description":"Faqtos station data — update every 5min"},"ribalab":{"title":"Ribalab","description":"Ribalab station data — update every 5min"},"mostra2025":{"title":"Mostra 2025","description":"Mostra 2025 station data — update every 5min"},"charts":{"qualidadeGeral":"overall quality","temperatura":"temperature","turbidez":"turbidity","ph":"pH","tds":"TDS (total dissolved solids)","indicadorQualidade":"quality indicator","visaoGeral":"overview"}}}');
+
+/***/ })
+
+};
+;

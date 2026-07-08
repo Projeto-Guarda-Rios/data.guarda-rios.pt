@@ -12,7 +12,8 @@ const routeLabels: Record<string, string> = {
   "/dashboard/geral": "~/dashboard/geral",
   "/dashboard/mostra-2025": "~/dashboard/mostra-2025",
   "/dashboard/granja": "~/dashboard/granja",
-  "/dashboard/ifest": "~/dashboard/I-Fest²",
+  "/dashboard/faqtos": "~/dashboard/faqtos",
+  "/dashboard/ribalab": "~/dashboard/ribalab",
 };
 
 export function Header() {

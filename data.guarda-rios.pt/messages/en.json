@@ -20,7 +20,7 @@
     "parametersLabel": "Parameters",
     "parametersDesc": "Temperature, Turbidity",
     "stationsLabel": "Stations",
-    "stationsDesc": "I-Fest²",
+    "stationsDesc": "Faqtos, Ribalab",
     "statusLabel": "Status",
     "statusValue": "Online",
     "statusDesc": "Automatic update every 5 min",
@@ -39,9 +39,13 @@
       "title": "Ribeira da Granja",
       "description": "Ribeira da Granja station data — update every 5min"
     },
-    "ifest": {
-      "title": "I-Fest²",
-      "description": "I-Fest² station data — update every 5min"
+    "faqtos": {
+      "title": "Faqtos",
+      "description": "Faqtos station data — update every 5min"
+    },
+    "ribalab": {
+      "title": "Ribalab",
+      "description": "Ribalab station data — update every 5min"
     },
     "mostra2025": {
       "title": "Mostra 2025",

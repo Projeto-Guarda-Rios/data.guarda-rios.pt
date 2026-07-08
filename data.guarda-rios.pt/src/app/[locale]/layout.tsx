@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "../globals.css";
 import { Sidebar } from "@/components/sidebar";
 import { Header } from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -39,27 +38,23 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <body className="font-mono antialiased">
-        <NextIntlClientProvider messages={messages}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem={false}
-            disableTransitionOnChange
-          >
-            <div className="flex h-screen overflow-hidden">
-              <Sidebar />
-              <div className="flex flex-1 flex-col overflow-hidden">
-                <Header />
-                <main className="flex-1 overflow-y-auto p-4 md:p-6">
-                  {children}
-                </main>
-              </div>
-            </div>
-          </ThemeProvider>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages}>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="dark"
+        enableSystem={false}
+        disableTransitionOnChange
+      >
+        <div className="flex h-screen overflow-hidden">
+          <Sidebar />
+          <div className="flex flex-1 flex-col overflow-hidden">
+            <Header />
+            <main className="flex-1 overflow-y-auto p-4 md:p-6">
+              {children}
+            </main>
+          </div>
+        </div>
+      </ThemeProvider>
+    </NextIntlClientProvider>
   );
 }

@@ -20,7 +20,7 @@
     "parametersLabel": "Parâmetros",
     "parametersDesc": "Temperatura, Turbidez",
     "stationsLabel": "Estações",
-    "stationsDesc": "I-Fest²",
+    "stationsDesc": "Faqtos, Ribalab",
     "statusLabel": "Status",
     "statusValue": "Online",
     "statusDesc": "Atualização automática a cada 5 min",
@@ -39,9 +39,13 @@
       "title": "Ribeira da Granja",
       "description": "Dados da estação Ribeira da Granja — atualização a cada 5min"
     },
-    "ifest": {
-      "title": "I-Fest²",
-      "description": "Dados da estação I-Fest² — atualização a cada 5min"
+    "faqtos": {
+      "title": "Faqtos",
+      "description": "Dados da estação Faqtos — atualização a cada 5min"
+    },
+    "ribalab": {
+      "title": "Ribalab",
+      "description": "Dados da estação Ribalab — atualização a cada 5min"
     },
     "mostra2025": {
       "title": "Mostra 2025",
