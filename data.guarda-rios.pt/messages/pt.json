@@ -31,6 +31,13 @@
   },
   "dashboard": {
     "refresh": "refresh",
+    "timeRange": "Período",
+    "custom": "Personalizado",
+    "from": "De",
+    "to": "Até",
+    "apply": "Aplicar",
+    "closeTimePicker": "Fechar seletor de período",
+    "invalidTimeRange": "A data de início tem de ser anterior à data de fim.",
     "geral": {
       "title": "Gráfico Geral",
       "description": "Visão geral de todos os sensores — atualização a cada 30s"

@@ -7,6 +7,10 @@ interface GrafanaChartProps {
   panelId: number;
   title: string;
   refreshToken: number;
+  timeRange: {
+    from: string;
+    to: string;
+  };
 }
 
 const DASHBOARD_BASE =
@@ -18,6 +22,7 @@ export function GrafanaChart({
   panelId,
   title,
   refreshToken,
+  timeRange,
 }: GrafanaChartProps) {
   const [mounted, setMounted] = useState(false);
   const [activeFrame, setActiveFrame] = useState<0 | 1>(0);
@@ -37,7 +42,7 @@ export function GrafanaChart({
   }, []);
 
   const grafanaTheme = resolvedTheme === "light" ? "light" : "dark";
-  const baseSrc = `${DASHBOARD_BASE}?orgId=2&from=now-1h&to=now&timezone=browser&panelId=${panelId}&__feature.dashboardSceneSolo&theme=${grafanaTheme}`;
+  const baseSrc = `${DASHBOARD_BASE}?orgId=2&from=${encodeURIComponent(timeRange.from)}&to=${encodeURIComponent(timeRange.to)}&timezone=browser&panelId=${panelId}&__feature.dashboardSceneSolo&theme=${grafanaTheme}`;
 
   useEffect(() => {
     if (!mounted) return;

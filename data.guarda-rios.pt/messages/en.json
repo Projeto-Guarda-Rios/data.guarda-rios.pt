@@ -31,6 +31,13 @@
   },
   "dashboard": {
     "refresh": "refresh",
+    "timeRange": "Time range",
+    "custom": "Custom",
+    "from": "From",
+    "to": "To",
+    "apply": "Apply",
+    "closeTimePicker": "Close time range picker",
+    "invalidTimeRange": "The start date must be before the end date.",
     "geral": {
       "title": "General Chart",
       "description": "Overview of all sensors — update every 30s"
