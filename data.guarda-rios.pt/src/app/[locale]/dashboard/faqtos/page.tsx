@@ -17,8 +17,6 @@ export default function FaqtosPage() {
       title={t("faqtos.title")}
       description={t("faqtos.description")}
       charts={charts}
-      refreshInterval={300000}
-      showRefreshButton
     />
   );
 }

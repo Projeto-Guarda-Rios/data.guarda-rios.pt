@@ -18,8 +18,6 @@ export default function Mostra2025Page() {
       title={t("mostra2025.title")}
       description={t("mostra2025.description")}
       charts={charts}
-      refreshInterval={300000}
-      showRefreshButton
     />
   );
 }

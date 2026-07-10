@@ -21,7 +21,6 @@ export default function GeralPage() {
       title={t("geral.title")}
       description={t("geral.description")}
       charts={charts}
-      refreshInterval={30000}
     />
   );
 }

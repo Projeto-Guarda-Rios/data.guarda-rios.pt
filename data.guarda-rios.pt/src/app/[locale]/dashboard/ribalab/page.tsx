@@ -17,8 +17,6 @@ export default function RibalabPage() {
       title={t("ribalab.title")}
       description={t("ribalab.description")}
       charts={charts}
-      refreshInterval={300000}
-      showRefreshButton
     />
   );
 }

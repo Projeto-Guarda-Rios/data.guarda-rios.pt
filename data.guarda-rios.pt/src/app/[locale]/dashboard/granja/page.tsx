@@ -21,7 +21,6 @@ export default function GranjaPage() {
       title={t("granja.title")}
       description={t("granja.description")}
       charts={charts}
-      refreshInterval={300000}
     />
   );
 }
